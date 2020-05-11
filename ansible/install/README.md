@@ -1,4 +1,4 @@
-## `Installation Ansible on Ubuntu Linux`
+## `Install Ansible on Ubuntu Linux`
 
 ```
 sudo apt-get update
