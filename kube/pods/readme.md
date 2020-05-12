@@ -1,7 +1,5 @@
-kubectl explain pods
-
-lab:
-====
+## lab:
+```
 kubectl get pods                         # list all running pods in current active namespace
 kubectl get pods --all-namespaces        # list all running pods in all namespaces available
 kubectl get pods -o wide                 # list all running pods in current active namespace wider output
@@ -20,3 +18,4 @@ kubectl expose pod nginx --target-port=80 --type=NodePort # expose pod as servic
 kubectl delete pods <podname>                    # delete a pod in current active namespace
 kubectl delete pods --all                        # delete all pods 
 kubectl delete pod <pod-name> --grace-period=0 --force  # delete pod forcefully
+```

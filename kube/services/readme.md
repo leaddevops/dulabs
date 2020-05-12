@@ -1,6 +1,6 @@
-lab:
-
-Note: svc is short name for service
+## lab:
+```
+# Note: svc is short name for service
 
 kubectl get svc                         # list all running services in current active namespace
 kubectl get svc -n kube-system          # list all running services in specified namespace
@@ -11,3 +11,4 @@ kubectl describe svc <svcname>              # detailed output about a service in
 
 kubectl delete svc <svcname>                    # delete a svc in current active namespace
 kubectl delete svc <svcname> -n <my-namespace>  # delete a svc in specified namespace
+```
