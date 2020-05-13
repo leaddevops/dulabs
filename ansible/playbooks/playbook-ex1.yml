@@ -1,6 +1,6 @@
 ---
 - hosts: all 
-#  become: yes
+  become: yes
   tasks:
 #### copy a file
     - name: copy file
