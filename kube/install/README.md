@@ -21,7 +21,7 @@
     
     RUN below Steps
     
-    cd /tmp ; git cone https://github.com/leaddevops/dulabs
+    cd /tmp ; git clone https://github.com/leaddevops/dulabs
     cd /tmp/dulabs/kube/install
     chmod 755 install-k8s-ubuntu.sh
     sh install-k8s-ubuntu.sh
