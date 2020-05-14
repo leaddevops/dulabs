@@ -15,6 +15,16 @@
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
     sudo apt-get update ; clear
     sudo apt-get install -y kubelet kubeadm kubectl	
+    
+    
+                                 OR
+    
+    RUN below Steps
+    
+    cd /tmp ; git cone https://github.com/leaddevops/dulabs
+    cd /tmp/dulabs/kube/install
+    chmod 755 install-k8s-ubuntu.sh
+    sh install-k8s-ubuntu.sh
 	
 ### Step2: `On Master only:`
 
