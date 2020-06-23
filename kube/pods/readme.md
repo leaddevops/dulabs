@@ -5,8 +5,6 @@ kubectl get pods --all-namespaces        # list all running pods in all namespac
 kubectl get pods -o wide                 # list all running pods in current active namespace wider output
 
 kubectl describe pod <podname>              # detailed output about a pod in current namespace
-kubectl describe pod <podname> -o wide      # detailed output about a pod wider output
-kubectl describe pod <podname> -o yaml      # detailed manifest file from apiserver yaml format
 
 kubectl logs my-pod                                 # dump pod logs (stdout)
 kubectl logs -f my-pod                              # stream pod logs (stdout)
