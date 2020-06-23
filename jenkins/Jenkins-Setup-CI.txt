@@ -26,14 +26,19 @@ Jenkins ( CI )
 
 CI ( continuous Integration )
 
-Jenkins Job      :  build lifecycle(build)     : maven goal           : post build action 
+Jenkins Job      :  maven goal          : post build action 
+---------------------------------------------------------------
 
-job1-compile	    compile                    : compile              : NA
+job1-compile	 : compile              : NA
 
-job2-codereview	 :  codereview                 : -P metrics pmd:pmd   : **/pmd.xml ( publish pmd analysis results )
 
-job3-unittest    :	unit test                  : test                 : target/surefire-reports/*.xml
+job2-codereview	 : -P metrics pmd:pmd   : **/pmd.xml ( publish pmd analysis results )
 
-job4-metriccheck :	metric check               : cobertura:cobertura -Dcobertura.report.format=xml  : target/site/cobertura/coverage.xml ( publish cobertura coverage report )
 
-job5-package     :  package                    : package               : NA
+job3-unittest    : test                 : target/surefire-reports/*.xml (publish junit test results)
+
+
+job4-metriccheck : cobertura:cobertura -Dcobertura.report.format=xml  : target/site/cobertura/coverage.xml ( publish cobertura coverage report )
+
+
+job5-package     : package              : NA
